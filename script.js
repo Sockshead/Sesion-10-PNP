@@ -1,13 +1,22 @@
 function restringeFrase(fraseIng, numFrase) {
     var frasArr = "";
-    fraseIng = Array.from(document.getElementById("fraseIng1").value);
+    var fraseRes = "";
+    var frase = document.getElementById("fraseIng1").value;
+    fraseIng = Array.from(frase);
     numFrase = document.getElementById("numFrase").value;
+    var n = frase.length;
 
     for (var i = 0; i < numFrase; i++) {
-        frasArr += fraseIng[i];
+        if (n > numFrase) {
+            frasArr += fraseIng[i];
+            fraseRes = frasArr + "...";
+        } else {
+            frasArr += fraseIng[i];
+            fraseRes = frasArr;
+        }
     }
-    console.log(frasArr);
-    document.getElementById("fraseRes1").value = frasArr;
+    console.log(fraseRes);
+    document.getElementById("fraseRes1").value = (fraseRes);
 }
 
 function estidiaFrase(fraseIng, palFrase) {
