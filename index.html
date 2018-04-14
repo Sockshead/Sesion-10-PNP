@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Sesion 10</title>
+</head>
+
+<body>
+    <table style="width:100%">
+        <tr>
+            <th>Cortar String</th>
+            <th>String inicial</th>
+        </tr>
+        <tr>
+            <th>Ingrese cualquier frase <input type="text" placeholder="Aqui su frase" autocomplete="off" id="fraseIng1"></th>
+            <th>Ingrese cualquier frase <input type="text" placeholder="Aqui su frase" autocomplete="off" id="fraseIng2"></th>
+        </tr>
+        <tr>
+            <th>Numero de caracteres por los que desea modificar su frase <input type="number" placeholder="X" autocomplete="off" id="numFrase"></th>
+            <th>Primera palabra de la frase <input type="text" placeholder="Aqui su palabra" autocomplete="off" id="pFrase"></th>
+        </tr>
+        <tr>
+            <th><button onclick="restringeFrase(fraseIng1,numFrase)"> Modifique su frase</button></th>
+            <th><button onclick="estidiaFrase(fraseIng2,pFrase)"> Restringa su frase</button></th>
+        </tr>
+        <tr>
+            <th>Frase modificada <input type="text" placeholder="Frase restringida" autocomplete="off" id="fraseRes1" disabled></th>
+            <th>Primera palbra de la frase igual a la palabra ingresada? <input type="text" placeholder="Frase restringida" autocomplete="off" id="fraseRes2" disabled></th>
+        </tr>
+    </table>
+</body>
+
+</html>
